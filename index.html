@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tables Vivantes — Un documentaire des plaines oubliées</title>
+  <meta name="description" content="Documentaire de science-fiction sur les tables vivantes et sauvages : leur histoire, leur habitat, leur alimentation et leur mode de vie. Illustrations dans le style des fresques rupestres."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     HÉRO
+══════════════════════════════════════════════════════════ -->
+<header class="hero">
+  <p class="mono kicker reveal">Cycle Naturaliste · Plaines de Formica IV</p>
+
+  <figure class="hero-art reveal">
+    <!-- Table sauvage — silhouette rupestre, façon Lascaux -->
+    <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg" aria-label="Une table sauvage dessinée dans le style des peintures rupestres">
+      <g fill="none" stroke="#c8843c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <!-- plateau / corps -->
+        <path d="M70 120 C 150 92, 410 92, 500 120 C 470 150, 100 150, 70 120 Z" fill="#a85a2c" fill-opacity=".55"/>
+        <!-- échine du plateau -->
+        <path d="M86 116 C 200 104, 360 104, 484 116"/>
+        <!-- pattes avant -->
+        <path d="M150 145 L 138 250 M168 147 L 182 250"/>
+        <!-- pattes arrière -->
+        <path d="M392 147 L 380 250 M412 145 L 426 250"/>
+        <!-- sabots -->
+        <path d="M126 250 l 22 0 M170 250 l 22 0 M368 250 l 22 0 M414 250 l 22 0"/>
+        <!-- "encolure" : un tiroir tendu comme une tête baissée qui broute -->
+        <path d="M500 120 C 528 128, 540 150, 524 172 L 500 150"/>
+      </g>
+      <!-- main négative, motif rupestre canonique -->
+      <g fill="#8a3324" fill-opacity=".8">
+        <path d="M44 60 q -6 -16 2 -22 q 8 -3 9 9 q 2 -16 10 -16 q 8 1 6 16 q 6 -12 12 -8 q 6 5 -1 16 q 9 -6 12 1 q 3 8 -10 16 q 8 14 -6 24 q -16 8 -30 -4 q -10 -10 -6 -26 q 1 -8 6 -6 z"/>
+      </g>
+    </svg>
+  </figure>
+
+  <h1 class="reveal">Tables Vivantes<em>les bêtes des plaines oubliées</em></h1>
+  <p class="lede reveal">Avant qu'on ne les domestique, avant les salles à manger et les nappes brodées, elles couraient en troupeaux sauvages. Voici leur histoire.</p>
+
+  <div class="scroll-cue mono reveal">▾ commencer le relevé</div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════════
+     CHAPITRE 01 — ORIGINES & HISTOIRE
+══════════════════════════════════════════════════════════ -->
+<section class="chapter" id="origines">
+  <div class="chapter-head reveal">
+    <span class="num">01</span>
+    <h2>Origines &amp; <em>Histoire</em></h2>
+  </div>
+
+  <div class="spread">
+    <div class="prose reveal">
+      <p class="dropcap">Il y a quelque trois cent mille cycles, dans les vastes plaines de poussière ferreuse, apparurent les premières <em>Mensa primigenia</em> — les tables primitives. Quadrupèdes patientes, elles broutaient les forêts naissantes, et c'est du bois qu'elles tirent encore aujourd'hui leur ossature.</p>
+      <p>Longtemps confondues avec de simples rochers plats, on ne les remarqua qu'au jour où l'une d'elles, dérangée, s'éloigna lentement au crépuscule. Les premiers observateurs gravèrent aussitôt sa silhouette sur les parois — fascinés par cet animal qui portait son dos comme un plateau d'offrandes.</p>
+
+      <ul class="timeline">
+        <li class="reveal">
+          <span class="era">— 300 000 cycles · l'Âge du Bois Vert</span>
+          <h4>La grande pousse</h4>
+          <p>Les proto-tables développent quatre membres porteurs et un plateau dorsal capable de stocker la sève. Apparition du tiroir vestigial.</p>
+        </li>
+        <li class="reveal">
+          <span class="era">— 80 000 cycles · les Migrations</span>
+          <h4>L'exode des troupeaux</h4>
+          <p>Le refroidissement des plaines pousse les hardes vers les bas-fonds. Les espèces à rallonge — capables d'étendre leur plateau — survivent.</p>
+        </li>
+        <li class="reveal">
+          <span class="era">— 9 000 cycles · le Pacte du Repas</span>
+          <h4>La domestication</h4>
+          <p>Une poignée de tables s'approchent des feux pour la chaleur. En échange du couvert, elles acceptent le poids des écuelles. Naissent les premières lignées domestiques.</p>
+        </li>
+        <li class="reveal">
+          <span class="era">aujourd'hui · les Réserves</span>
+          <h4>Les dernières sauvages</h4>
+          <p>Moins de quatre mille individus errent encore librement. Ce documentaire leur est dédié.</p>
+        </li>
+      </ul>
+    </div>
+
+    <figure class="fresque reveal paint">
+      <!-- Frise d'évolution rupestre : du proto-table à la table moderne -->
+      <svg viewBox="0 0 360 420" xmlns="http://www.w3.org/2000/svg" aria-label="Frise rupestre de l'évolution des tables">
+        <g fill="none" stroke="#e8dcc6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="--len:600">
+          <!-- proto-table, trapue -->
+          <path d="M40 70 q 50 -18 90 0 q -10 16 -90 0 Z"/>
+          <path d="M55 78 l -4 28 M118 78 l 4 28"/>
+        </g>
+        <g fill="none" stroke="#c8843c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="--len:700">
+          <!-- table de transition -->
+          <path d="M210 80 q 60 -22 110 0 q -12 18 -110 0 Z"/>
+          <path d="M230 90 l -6 40 M300 90 l 6 40"/>
+          <path d="M252 90 l 0 40 M280 90 l 0 40"/>
+        </g>
+        <g fill="none" stroke="#a85a2c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="--len:900">
+          <!-- table moderne, élancée, broutant -->
+          <path d="M55 250 q 90 -26 170 0 q -16 22 -170 0 Z"/>
+          <path d="M80 264 l -8 70 M118 268 l 0 66 M178 268 l 0 66 M214 264 l 10 70"/>
+          <!-- tête baissée -->
+          <path d="M225 252 q 28 8 30 34 l -22 -2"/>
+        </g>
+        <!-- flèches d'évolution gravées -->
+        <g fill="none" stroke="#8a3324" stroke-width="3" stroke-linecap="round" style="--len:200">
+          <path d="M150 80 l 40 0 M182 74 l 10 6 -10 6"/>
+          <path d="M200 150 q -40 40 -60 80 M150 218 l -12 8 14 2"/>
+        </g>
+      </svg>
+      <figcaption>Fig. 1 — Évolution de la Mensa, relevé pariétal</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     CITATION
+══════════════════════════════════════════════════════════ -->
+<div class="pullquote reveal">
+  <blockquote>« Ce que l'on prend pour un meuble immobile n'est qu'une bête qui a appris à attendre. »</blockquote>
+  <cite>— Carnets de terrain, Réserve de Formica IV</cite>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     CHAPITRE 02 — HABITAT
+══════════════════════════════════════════════════════════ -->
+<section class="chapter" id="habitat">
+  <div class="chapter-head reveal">
+    <span class="num">02</span>
+    <h2>Leur <em>Habitat</em></h2>
+  </div>
+
+  <div class="spread reverse">
+    <div class="prose reveal">
+      <p class="dropcap">La table sauvage privilégie les grandes étendues planes : steppes de linoléum, plateaux calcaires, anciens parquets fossilisés. Elle a besoin d'espace pour déployer ses rallonges et d'un sol assez ferme pour ne pas s'enfoncer sous le poids de son plateau.</p>
+      <p>On la trouve rarement seule. Le troupeau se regroupe autour d'un point d'eau — ou, dans les régions arides, autour d'un dessous-de-verre abandonné dont elles absorbent l'humidité par capillarité.</p>
+      <p>La nuit, les tables se rangent : flanc contre flanc, plateaux alignés, formant de longues rangées défensives que les naturalistes nomment <em>réfectoires</em>. Au lever du jour, elles se dispersent à nouveau.</p>
+
+      <dl class="field-note reveal">
+        <span class="row"><dt>Biome — </dt><dd>plaines planes, faible déclivité</dd></span>
+        <span class="row"><dt>Altitude — </dt><dd>0 à 1 200 m (sous le niveau des étagères)</dd></span>
+        <span class="row"><dt>Climat — </dt><dd>sec à tempéré, craint l'humidité (gondolement)</dd></span>
+        <span class="row"><dt>Territoire — </dt><dd>jusqu'à 40 km² par harde</dd></span>
+        <span class="row"><dt>Abri — </dt><dd>aucun ; la table EST l'abri des plus petits</dd></span>
+      </dl>
+    </div>
+
+    <figure class="fresque reveal paint">
+      <!-- Scène de paysage rupestre : troupeau sur la plaine, soleil bas -->
+      <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" aria-label="Troupeau de tables dans la plaine, fresque rupestre">
+        <!-- soleil / lune gravé -->
+        <circle cx="290" cy="80" r="38" fill="none" stroke="#c8843c" stroke-width="4" style="--len:260"/>
+        <g fill="none" stroke="#c8843c" stroke-width="2.5" style="--len:60">
+          <path d="M290 30 l0 -14 M290 130 l0 14 M240 80 l-14 0 M340 80 l14 0 M255 45 l-10 -10 M325 45 l10 -10 M255 115 l-10 10 M325 115 l10 10"/>
+        </g>
+        <!-- ligne d'horizon -->
+        <line x1="20" y1="250" x2="340" y2="250" stroke="#8a3324" stroke-width="3" style="--len:340"/>
+        <!-- troupeau, tailles décroissantes (perspective) -->
+        <g fill="none" stroke="#e8dcc6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="--len:500">
+          <path d="M40 210 q 50 -16 96 0 q -12 16 -96 0 Z" fill="#a85a2c" fill-opacity=".4"/>
+          <path d="M62 222 l-6 28 M120 222 l6 28 M84 224 l0 26 M100 224 l0 26"/>
+        </g>
+        <g fill="none" stroke="#e8dcc6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="--len:380">
+          <path d="M170 224 q 36 -12 68 0 q -8 12 -68 0 Z" fill="#a85a2c" fill-opacity=".35"/>
+          <path d="M186 232 l-4 20 M226 232 l4 20 M204 234 l0 18"/>
+        </g>
+        <g fill="none" stroke="#e8dcc6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="--len:260">
+          <path d="M268 230 q 26 -9 48 0 q -6 9 -48 0 Z" fill="#a85a2c" fill-opacity=".3"/>
+          <path d="M280 236 l-3 14 M306 236 l3 14"/>
+        </g>
+      </svg>
+      <figcaption>Fig. 2 — Harde au point d'eau, paroi est</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     CHAPITRE 03 — ALIMENTATION
+══════════════════════════════════════════════════════════ -->
+<section class="chapter" id="alimentation">
+  <div class="chapter-head reveal">
+    <span class="num">03</span>
+    <h2>Leur <em>Alimentation</em></h2>
+  </div>
+
+  <div class="spread">
+    <div class="prose reveal">
+      <p class="dropcap">Contrairement à une croyance tenace, la table sauvage ne se nourrit pas de ce qu'on pose sur elle. C'est une <em>xylophage</em> : elle broute le bois mort, les copeaux, l'écorce tendre, qu'elle digère lentement pour entretenir son plateau.</p>
+      <p>Sa langue — un long ruban de feutrine rugueuse logé sous le tiroir — racle les surfaces et capte la poussière de bois. Les espèces vernies, plus rares, complètent ce régime de résines sucrées récoltées sur les pins fossiles.</p>
+      <p>La digestion produit une fine sciure que la table régurgite la nuit : un terreau précieux qui fertilise la plaine et nourrit, en retour, les forêts dont elle se repaîtra. Tout se tient.</p>
+
+      <dl class="field-note reveal">
+        <span class="row"><dt>Régime — </dt><dd>xylophage (bois mort, copeaux, écorce)</dd></span>
+        <span class="row"><dt>Compléments — </dt><dd>résines, cire, vernis sauvage</dd></span>
+        <span class="row"><dt>Ration — </dt><dd>~3 kg de bois sec / cycle</dd></span>
+        <span class="row"><dt>Prédateurs — </dt><dd>la termite des steppes ; le bûcheron</dd></span>
+        <span class="row"><dt>Rejet — </dt><dd>sciure fertile (« l'or des plaines »)</dd></span>
+      </dl>
+    </div>
+
+    <figure class="fresque reveal paint">
+      <!-- Table broutant un arbuste, fresque -->
+      <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" aria-label="Table broutant un arbuste, fresque rupestre">
+        <!-- arbuste / bois -->
+        <g fill="none" stroke="#8a3324" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="--len:300">
+          <path d="M70 300 L70 180 M70 220 l-26 -22 M70 240 l30 -26 M70 200 l-22 -28 M70 196 l26 -24"/>
+        </g>
+        <!-- feuillage gravé -->
+        <g fill="#c8843c" fill-opacity=".55" stroke="#c8843c" stroke-width="2" style="--len:120">
+          <circle cx="44" cy="174" r="12"/><circle cx="100" cy="186" r="13"/>
+          <circle cx="48" cy="166" r="10"/><circle cx="92" cy="156" r="11"/>
+        </g>
+        <!-- la table, tête baissée vers l'arbuste -->
+        <g fill="none" stroke="#e8dcc6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="--len:900">
+          <path d="M150 200 q 90 -28 168 0 q -16 22 -168 0 Z" fill="#a85a2c" fill-opacity=".45"/>
+          <path d="M176 214 l-10 86 M214 218 l0 82 M268 218 l0 82 M306 214 l10 86"/>
+          <!-- encolure tendue vers le bas, à gauche, vers l'arbuste -->
+          <path d="M150 200 q -34 6 -50 40 q -8 18 8 30"/>
+          <!-- "bouche" qui broute -->
+          <path d="M104 264 q 12 8 24 4"/>
+        </g>
+        <!-- particules de sciure -->
+        <g fill="#e8dcc6" fill-opacity=".7" style="--len:20">
+          <circle cx="120" cy="288" r="3"/><circle cx="134" cy="300" r="2.4"/><circle cx="150" cy="292" r="2"/>
+        </g>
+      </svg>
+      <figcaption>Fig. 3 — Spécimen broutant, scène de chasse pariétale</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     CHAPITRE 04 — MODE DE VIE
+══════════════════════════════════════════════════════════ -->
+<section class="chapter" id="mode-de-vie">
+  <div class="chapter-head reveal">
+    <span class="num">04</span>
+    <h2>Leur <em>Mode de vie</em></h2>
+  </div>
+
+  <div class="spread reverse">
+    <div class="prose reveal">
+      <p class="dropcap">La table est un animal profondément social. La harde s'organise autour d'une matriarche — la <em>Grande Desserte</em> — la plus ancienne et la plus large, dont le plateau porte les cicatrices de mille repas. C'est elle qui choisit les pâturages et donne le signal du rassemblement nocturne.</p>
+      <p>Les jeunes — les <em>tabourets</em> — naissent sans rallonge et suivent le troupeau en trottinant sur trois pattes encore mal assurées. Ils gagnent leur quatrième pied à l'âge adulte, lors d'une mue qu'on appelle <em>l'équilibrage</em>.</p>
+      <p>Leur communication passe par le grincement : un langage de craquements de bois, audible à des kilomètres, par lequel elles signalent l'eau, le danger, ou simplement leur présence dans la nuit des plaines.</p>
+
+      <dl class="field-note reveal">
+        <span class="row"><dt>Structure — </dt><dd>harde matriarcale (15 à 60 têtes)</dd></span>
+        <span class="row"><dt>Communication — </dt><dd>grincements, craquements basse fréquence</dd></span>
+        <span class="row"><dt>Petits — </dt><dd>« tabourets », 3 pattes à la naissance</dd></span>
+        <span class="row"><dt>Longévité — </dt><dd>jusqu'à 400 cycles (le bois se patine)</dd></span>
+        <span class="row"><dt>Rituel — </dt><dd>« l'équilibrage » : mue de la 4ᵉ patte</dd></span>
+      </dl>
+    </div>
+
+    <figure class="fresque reveal paint">
+      <!-- Harde sociale : matriarche + tabouret à trois pattes -->
+      <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" aria-label="Matriarche et son petit, fresque rupestre">
+        <!-- matriarche large -->
+        <g fill="none" stroke="#e8dcc6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="--len:1000">
+          <path d="M40 170 q 110 -32 200 0 q -18 26 -200 0 Z" fill="#a85a2c" fill-opacity=".45"/>
+          <path d="M66 186 l-8 90 M120 190 l0 86 M180 190 l0 86 M232 186 l8 90"/>
+          <!-- rallonge déployée -->
+          <path d="M240 165 q 36 -4 56 8" stroke-dasharray="2 8"/>
+        </g>
+        <!-- tabouret (petit) à trois pattes -->
+        <g fill="none" stroke="#c8843c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="--len:500">
+          <path d="M250 250 q 44 -14 82 0 q -8 14 -82 0 Z" fill="#a85a2c" fill-opacity=".4"/>
+          <path d="M268 260 l-6 56 M290 262 l0 54 M312 260 l6 56"/>
+        </g>
+        <!-- ondes de grincement gravées -->
+        <g fill="none" stroke="#8a3324" stroke-width="2.5" style="--len:120">
+          <path d="M150 120 q 14 -14 0 -28 M162 124 q 24 -22 0 -44 M174 128 q 34 -30 0 -60"/>
+        </g>
+      </svg>
+      <figcaption>Fig. 4 — La Grande Desserte et son tabouret</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     ÉPILOGUE
+══════════════════════════════════════════════════════════ -->
+<div class="pullquote reveal">
+  <blockquote>« La prochaine fois que vous poserez les coudes sur une table, écoutez. Sous le vernis, quelque chose, peut-être, attend encore la plaine. »</blockquote>
+  <cite>— Mot de la fin</cite>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     GÉNÉRIQUE
+══════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="credits reveal">
+    Un documentaire de la série <strong>« Plaines Oubliées »</strong><br/>
+    Relevés de terrain · Réserve de Formica IV<br/>
+    Fresques pariétales gravées à la main · pigments d'ocre et de charbon
+  </div>
+  <p class="disclaimer reveal">
+    Œuvre de fiction. Aucune table, sauvage ou domestique, n'a été dérangée pendant le tournage.
+    Toute ressemblance avec votre mobilier serait purement fortuite — quoique.
+  </p>
+</footer>
+
+<script>
+  // Barre de progression
+  const bar = document.getElementById('progress');
+  const onScroll = () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    bar.style.width = pct + '%';
+  };
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Apparition au scroll + "peinture" des fresques
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.18 });
+  document.querySelectorAll('.reveal, .paint').forEach(el => io.observe(el));
+
+  // Calibre la longueur du tracé pour chaque trait (animation "peinture")
+  document.querySelectorAll('.paint [style*="--len"]').forEach(g => {
+    // rien à faire : --len est défini en CSS inline, repris par le sélecteur
+  });
+</script>
+
+</body>
+</html>
