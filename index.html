@@ -309,26 +309,31 @@
 </footer>
 
 <script>
-  // Barre de progression
+  // Apparition / disparition liées à la position du scroll.
+  //
+  // Une "ligne de seuil" est tracée à 85 % de la hauteur de l'écran. Un élément
+  // reçoit `.in` (et joue son animation) dès que son haut franchit cette ligne
+  // en montant — c.-à-d. quand on DESCEND jusqu'à lui. Quand on REMONTE, son
+  // haut repasse sous la ligne, `.in` est retiré et la transition se rejoue à
+  // l'envers : l'élément s'efface. Redescendre le fait réapparaître.
   const bar = document.getElementById('progress');
-  const onScroll = () => {
+  const els = [...document.querySelectorAll('.reveal, .paint')];
+  let ticking = false;
+
+  const update = () => {
+    ticking = false;
     const h = document.documentElement;
-    const pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
-    bar.style.width = pct + '%';
+    bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+    const line = window.innerHeight * 0.85;          // ligne de déclenchement
+    for (const el of els) {
+      el.classList.toggle('in', el.getBoundingClientRect().top < line);
+    }
   };
+
+  const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
   document.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  // Apparition au scroll + "peinture" des fresques
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.18 });
-  document.querySelectorAll('.reveal, .paint').forEach(el => io.observe(el));
-
-  // Calibre la longueur du tracé pour chaque trait (animation "peinture")
-  document.querySelectorAll('.paint [style*="--len"]').forEach(g => {
-    // rien à faire : --len est défini en CSS inline, repris par le sélecteur
-  });
+  window.addEventListener('resize', onScroll, { passive: true });
+  update();
 </script>
 
 </body>
