@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
-"""Contenu trilingue (FR/EN/DE) du site Tables sauvages. Importé par build.py."""
+"""Contenu trilingue (FR/EN/DE) du site Tables Vivantes. Importé par build.py."""
 
 META = {
- "index": {"fr": {"title": "Accueil", "desc": "Documentaire de science-fiction naturaliste sur les tables vivantes et sauvages."},
-           "en": {"title": "Home", "desc": "A naturalist science-fiction documentary on living, wild tables."},
-           "de": {"title": "Startseite", "desc": "Eine naturkundliche Science-Fiction-Dokumentation über lebende, wilde Tische."}},
- "especes": {"fr": {"title": "Espèces", "desc": "Les neuf espèces de tables sauvages observées."},
-             "en": {"title": "Species", "desc": "The nine observed species of wild tables."},
-             "de": {"title": "Arten", "desc": "Die neun beobachteten Arten wilder Tische."}},
- "habitat": {"fr": {"title": "Habitat", "desc": "Où vivent les tables sauvages."},
-             "en": {"title": "Habitat", "desc": "Where wild tables live."},
-             "de": {"title": "Lebensraum", "desc": "Wo wilde Tische leben."}},
- "alimentation": {"fr": {"title": "Alimentation", "desc": "Le régime xylophage des tables sauvages."},
-                  "en": {"title": "Diet", "desc": "The wood-eating diet of wild tables."},
-                  "de": {"title": "Ernährung", "desc": "Die holzfressende Ernährung wilder Tische."}},
+ "index": {"fr": {"title": "Accueil", "desc": "Documentaire de science-fiction naturaliste sur les tables vivantes."},
+           "en": {"title": "Home", "desc": "A naturalist science-fiction documentary on living, living tables."},
+           "de": {"title": "Startseite", "desc": "Eine naturkundliche Science-Fiction-Dokumentation über die lebenden Tische."}},
+ "especes": {"fr": {"title": "Espèces", "desc": "Les neuf espèces de tables vivantes observées."},
+             "en": {"title": "Species", "desc": "The nine observed species of living tables."},
+             "de": {"title": "Arten", "desc": "Die neun beobachteten Arten lebender Tische."}},
+ "habitat": {"fr": {"title": "Habitat", "desc": "Où vivent les tables vivantes."},
+             "en": {"title": "Habitat", "desc": "Where living tables live."},
+             "de": {"title": "Lebensraum", "desc": "Wo lebende Tische leben."}},
+ "alimentation": {"fr": {"title": "Alimentation", "desc": "Le régime xylophage des tables vivantes."},
+                  "en": {"title": "Diet", "desc": "The wood-eating diet of living tables."},
+                  "de": {"title": "Ernährung", "desc": "Die holzfressende Ernährung lebender Tische."}},
  "communication": {"fr": {"title": "Communication", "desc": "Grincements, tambourinage et dictionnaire de sons."},
                    "en": {"title": "Communication", "desc": "Creaks, drumming and a dictionary of sounds."},
                    "de": {"title": "Kommunikation", "desc": "Knarren, Trommeln und ein Wörterbuch der Laute."}},
@@ -23,18 +23,18 @@ META = {
  "histoire": {"fr": {"title": "Histoire", "desc": "Des origines à la domestication des tables vivantes."},
               "en": {"title": "History", "desc": "From the origins to the domestication of living tables."},
               "de": {"title": "Geschichte", "desc": "Von den Ursprüngen bis zur Domestizierung lebender Tische."}},
- "protection": {"fr": {"title": "Protection", "desc": "Cohabiter avec les tables sauvages sans les capturer."},
-                "en": {"title": "Conservation", "desc": "Coexisting with wild tables without capturing them."},
-                "de": {"title": "Schutz", "desc": "Mit wilden Tischen leben, ohne sie zu fangen."}},
- "galerie": {"fr": {"title": "Galerie", "desc": "Planches naturalistes des tables sauvages."},
-             "en": {"title": "Gallery", "desc": "Naturalist plates of the wild tables."},
-             "de": {"title": "Galerie", "desc": "Naturkundliche Tafeln der wilden Tische."}},
+ "protection": {"fr": {"title": "Protection", "desc": "Cohabiter avec les tables vivantes sans les capturer."},
+                "en": {"title": "Conservation", "desc": "Coexisting with living tables without capturing them."},
+                "de": {"title": "Schutz", "desc": "Mit lebenden Tischen leben, ohne sie zu fangen."}},
+ "galerie": {"fr": {"title": "Galerie", "desc": "Planches naturalistes des tables vivantes."},
+             "en": {"title": "Gallery", "desc": "Naturalist plates of the living tables."},
+             "de": {"title": "Galerie", "desc": "Naturkundliche Tafeln der lebenden Tische."}},
  "journal": {"fr": {"title": "Journal", "desc": "Carnet de terrain d’une mission de repérage."},
              "en": {"title": "Field Journal", "desc": "Field notebook from a survey expedition."},
              "de": {"title": "Tagebuch", "desc": "Feldtagebuch einer Erkundungsmission."}},
- "recit": {"fr": {"title": "Récit", "desc": "La personne sauvée par une table sauvage."},
-           "en": {"title": "Account", "desc": "The person saved by a wild table."},
-           "de": {"title": "Bericht", "desc": "Die von einem wilden Tisch gerettete Person."}},
+ "recit": {"fr": {"title": "Récit", "desc": "La personne sauvée par une table vivante."},
+           "en": {"title": "Account", "desc": "The person saved by a living table."},
+           "de": {"title": "Bericht", "desc": "Die von einem lebenden Tisch gerettete Person."}},
 }
 
 PAGES = {}
@@ -42,46 +42,46 @@ PAGES = {}
 # ════════════════════════ ACCUEIL ════════════════════════
 PAGES["index"] = {
  "fr": [
-  {"type":"hero","kicker":"Documentaire naturaliste de terrain","h1":"Les tables sauvages",
+  {"type":"hero","kicker":"Documentaire naturaliste de terrain","h1":"Les tables vivantes",
    "lead":"Aux marges des vallées, dans les cavernes tièdes et sous les forêts de pins noirs, vivent des êtres que l’on croyait immobiles. Elles broutent, migrent, se camouflent et veillent sur leurs petits tabourets.",
-   "cta":True,"img":"composite-troupeau","alt":"Une harde de tables sauvages dans une plaine brumeuse"},
+   "cta":True,"img":"index","alt":"Une harde de tables vivantes dans une plaine brumeuse"},
   {"type":"cards","items":[
-   {"meta":"Comportement","h3":"Des meubles à sang tiède","p":"La table sauvage n’est pas un objet animé par caprice : c’est un organisme social, prudent, capable d’apprentissage, dont les pattes répondent aux vibrations du sol."},
+   {"meta":"Comportement","h3":"Des meubles à sang tiède","p":"La table vivante n’est pas un objet animé par caprice : c’est un organisme social, prudent, capable d’apprentissage, dont les pattes répondent aux vibrations du sol."},
    {"meta":"Méthode","h3":"Observation à distance","p":"Les naturalistes n’approchent jamais une colonie au lever du soleil. À cette heure, les tables déplient leurs angles et confondent un trépied photographique avec un rival."},
    {"meta":"Mythe","h3":"La première planche","p":"Les anciens récits affirment qu’une planche tomba du ciel lors d’un orage magnétique. Là où elle toucha terre, la première table ouvrit les yeux."},
   ]},
   {"type":"section","h2":"Une nature à hauteur de plateau","paras":[
    "Ce site rassemble les notes d’expédition, les fiches d’espèces et les hypothèses historiques concernant les populations de tables vivantes. Le ton demeure volontairement sobre : leur silhouette prête à sourire, mais leur monde obéit à des règles d’une précision étonnante.",
    "On les trouve dans les gorges calcaires, sur les plateaux secs, au bord des rivières ferrugineuses et parfois dans les ruines de salles à manger abandonnées."],
-   "quote":"« Quand une table sauvage s’arrête, ce n’est pas qu’elle renonce à vivre. C’est qu’elle écoute le sol. » — Carnet de terrain, vallée des Nappes"},
+   "quote":"« Quand une table vivante s’arrête, ce n’est pas qu’elle renonce à vivre. C’est qu’elle écoute le sol. » — Carnet de terrain, vallée des Nappes"},
  ],
  "en": [
-  {"type":"hero","kicker":"A naturalist field documentary","h1":"The wild tables",
+  {"type":"hero","kicker":"A naturalist field documentary","h1":"The living tables",
    "lead":"At the edges of the valleys, in warm caverns and beneath the black-pine forests, live beings once thought motionless. They graze, migrate, camouflage themselves and watch over their little stools.",
-   "cta":True,"img":"composite-troupeau","alt":"A herd of wild tables on a misty plain"},
+   "cta":True,"img":"index","alt":"A herd of living tables on a misty plain"},
   {"type":"cards","items":[
-   {"meta":"Behaviour","h3":"Warm-blooded furniture","p":"The wild table is not an object moved by whim: it is a social, cautious organism, capable of learning, whose legs respond to vibrations in the ground."},
+   {"meta":"Behaviour","h3":"Warm-blooded furniture","p":"The living table is not an object moved by whim: it is a social, cautious organism, capable of learning, whose legs respond to vibrations in the ground."},
    {"meta":"Method","h3":"Observation from afar","p":"Naturalists never approach a colony at sunrise. At that hour the tables unfold their corners and mistake a camera tripod for a rival."},
    {"meta":"Myth","h3":"The first plank","p":"Old tales claim a plank fell from the sky during a magnetic storm. Where it touched the earth, the first table opened its eyes."},
   ]},
   {"type":"section","h2":"A nature at tabletop height","paras":[
    "This site gathers expedition notes, species sheets and historical hypotheses about the living-table populations. The tone is deliberately sober: their silhouette may raise a smile, but their world obeys rules of startling precision.",
    "They are found in limestone gorges, on dry plateaus, along iron-rich rivers, and sometimes in the ruins of abandoned dining rooms."],
-   "quote":"“When a wild table stops, it is not giving up on life. It is listening to the ground.” — Field notebook, Valley of the Cloths"},
+   "quote":"“When a living table stops, it is not giving up on life. It is listening to the ground.” — Field notebook, Valley of the Cloths"},
  ],
  "de": [
-  {"type":"hero","kicker":"Eine naturkundliche Feld-Dokumentation","h1":"Die wilden Tische",
+  {"type":"hero","kicker":"Eine naturkundliche Feld-Dokumentation","h1":"Die lebenden Tische",
    "lead":"An den Rändern der Täler, in warmen Höhlen und unter den Schwarzkiefernwäldern leben Wesen, die man für unbeweglich hielt. Sie grasen, wandern, tarnen sich und wachen über ihre kleinen Hocker.",
-   "cta":True,"img":"composite-troupeau","alt":"Eine Herde wilder Tische in einer nebligen Ebene"},
+   "cta":True,"img":"index","alt":"Eine Herde lebender Tische in einer nebligen Ebene"},
   {"type":"cards","items":[
-   {"meta":"Verhalten","h3":"Warmblütige Möbel","p":"Der wilde Tisch ist kein launisch bewegtes Objekt: Er ist ein soziales, vorsichtiges, lernfähiges Wesen, dessen Beine auf Erschütterungen des Bodens reagieren."},
+   {"meta":"Verhalten","h3":"Warmblütige Möbel","p":"Der lebende Tisch ist kein launisch bewegtes Objekt: Er ist ein soziales, vorsichtiges, lernfähiges Wesen, dessen Beine auf Erschütterungen des Bodens reagieren."},
    {"meta":"Methode","h3":"Beobachtung aus der Ferne","p":"Naturforscher nähern sich einer Kolonie nie bei Sonnenaufgang. Dann entfalten die Tische ihre Ecken und verwechseln ein Kamerastativ mit einem Rivalen."},
    {"meta":"Mythos","h3":"Die erste Planke","p":"Alte Erzählungen behaupten, eine Planke sei bei einem Magnetsturm vom Himmel gefallen. Wo sie den Boden berührte, öffnete der erste Tisch die Augen."},
   ]},
   {"type":"section","h2":"Eine Natur auf Tischhöhe","paras":[
    "Diese Seite versammelt Expeditionsnotizen, Artensteckbriefe und historische Hypothesen über die Populationen lebender Tische. Der Ton bleibt bewusst nüchtern: Ihre Silhouette mag ein Lächeln wecken, doch ihre Welt folgt erstaunlich präzisen Regeln.",
    "Man findet sie in Kalkschluchten, auf trockenen Hochebenen, an eisenhaltigen Flüssen und manchmal in den Ruinen verlassener Esszimmer."],
-   "quote":"„Wenn ein wilder Tisch innehält, gibt er das Leben nicht auf. Er hört dem Boden zu.“ — Feldtagebuch, Tal der Tücher"},
+   "quote":"„Wenn ein lebender Tisch innehält, gibt er das Leben nicht auf. Er hört dem Boden zu.“ — Feldtagebuch, Tal der Tücher"},
  ],
 }
 
@@ -94,7 +94,7 @@ PAGES["especes"] = {
   {"type":"species"},
   {"type":"section","h2":"Classification proposée","paras":[
    "Règne : <em>Mobilia silenciosa</em> · Embranchement : <em>Quadrupedia planata</em> · Classe : <em>Tabuliformes</em> · Ordre : <em>Mensales</em> · Famille : <em>Tabulidae</em>.",
-   "Cette classification n’est pas définitive. Les traces dans la poussière indiquent que certaines espèces possèdent quatre pattes, d’autres trois, six, voire un nombre variable lors des mues saisonnières. On reconnaît pourtant toutes les tables sauvages à leur réflexe de stabilisation : face au danger, elles cherchent l’horizontalité parfaite."]},
+   "Cette classification n’est pas définitive. Les traces dans la poussière indiquent que certaines espèces possèdent quatre pattes, d’autres trois, six, voire un nombre variable lors des mues saisonnières. On reconnaît pourtant toutes les tables vivantes à leur réflexe de stabilisation : face au danger, elles cherchent l’horizontalité parfaite."]},
  ],
  "en": [
   {"type":"page_title","kicker":"A living classification","h1":"The 9 species",
@@ -103,7 +103,7 @@ PAGES["especes"] = {
   {"type":"species"},
   {"type":"section","h2":"Proposed classification","paras":[
    "Kingdom: <em>Mobilia silenciosa</em> · Phylum: <em>Quadrupedia planata</em> · Class: <em>Tabuliformes</em> · Order: <em>Mensales</em> · Family: <em>Tabulidae</em>.",
-   "This classification is not final. Tracks in the dust show that some species have four legs, others three, six, or a number that varies with the seasonal moults. Yet every wild table is known by its stabilising reflex: faced with danger, it seeks perfect horizontality."]},
+   "This classification is not final. Tracks in the dust show that some species have four legs, others three, six, or a number that varies with the seasonal moults. Yet every living table is known by its stabilising reflex: faced with danger, it seeks perfect horizontality."]},
  ],
  "de": [
   {"type":"page_title","kicker":"Eine lebende Systematik","h1":"Die 9 Arten",
@@ -112,7 +112,7 @@ PAGES["especes"] = {
   {"type":"species"},
   {"type":"section","h2":"Vorgeschlagene Systematik","paras":[
    "Reich: <em>Mobilia silenciosa</em> · Stamm: <em>Quadrupedia planata</em> · Klasse: <em>Tabuliformes</em> · Ordnung: <em>Mensales</em> · Familie: <em>Tabulidae</em>.",
-   "Diese Systematik ist nicht endgültig. Spuren im Staub zeigen, dass manche Arten vier Beine haben, andere drei, sechs oder eine bei den Häutungen wechselnde Zahl. Dennoch erkennt man jeden wilden Tisch an seinem Stabilisierungsreflex: bei Gefahr sucht er die vollkommene Waagerechte."]},
+   "Diese Systematik ist nicht endgültig. Spuren im Staub zeigen, dass manche Arten vier Beine haben, andere drei, sechs oder eine bei den Häutungen wechselnde Zahl. Dennoch erkennt man jeden lebenden Tisch an seinem Stabilisierungsreflex: bei Gefahr sucht er die vollkommene Waagerechte."]},
  ],
 }
 
@@ -120,7 +120,7 @@ PAGES["especes"] = {
 PAGES["habitat"] = {
  "fr": [
   {"type":"page_title","kicker":"Territoire","h1":"Habitat",
-   "lead":"La table sauvage privilégie les grandes étendues planes, assez fermes pour porter le poids de son plateau."},
+   "lead":"La table vivante privilégie les grandes étendues planes, assez fermes pour porter le poids de son plateau."},
   {"type":"section","h2":"Des plaines à perte de vue","paras":[
    "On la rencontre sur les steppes, les plateaux calcaires et les anciens parquets fossilisés. Elle a besoin d’espace pour déployer ses rallonges et d’un sol stable pour ne pas s’enfoncer.",
    "Le troupeau se regroupe autour d’un point d’eau — ou, dans les régions arides, autour d’un dessous-de-verre abandonné dont il absorbe l’humidité par capillarité."]},
@@ -130,7 +130,7 @@ PAGES["habitat"] = {
  ],
  "en": [
   {"type":"page_title","kicker":"Territory","h1":"Habitat",
-   "lead":"The wild table favours wide, flat expanses, firm enough to carry the weight of its top."},
+   "lead":"The living table favours wide, flat expanses, firm enough to carry the weight of its top."},
   {"type":"section","h2":"Plains as far as the eye can see","paras":[
    "It is found on steppes, limestone plateaus and ancient fossilised parquet. It needs room to unfold its leaves and stable ground so as not to sink.",
    "The herd gathers around a waterhole — or, in arid regions, around an abandoned coaster from which it draws moisture by capillary action."]},
@@ -140,7 +140,7 @@ PAGES["habitat"] = {
  ],
  "de": [
   {"type":"page_title","kicker":"Territorium","h1":"Lebensraum",
-   "lead":"Der wilde Tisch bevorzugt weite, flache Flächen, fest genug, um das Gewicht seiner Platte zu tragen."},
+   "lead":"Der lebende Tisch bevorzugt weite, flache Flächen, fest genug, um das Gewicht seiner Platte zu tragen."},
   {"type":"section","h2":"Ebenen bis zum Horizont","paras":[
    "Man trifft ihn auf Steppen, Kalkhochebenen und altem versteinertem Parkett. Er braucht Raum, um seine Verlängerungen auszufahren, und festen Boden, um nicht einzusinken.",
    "Die Herde sammelt sich an einer Wasserstelle — oder, in trockenen Gegenden, um einen verlassenen Untersetzer, dem sie durch Kapillarwirkung Feuchtigkeit entzieht."]},
@@ -154,7 +154,7 @@ PAGES["habitat"] = {
 PAGES["alimentation"] = {
  "fr": [
   {"type":"page_title","kicker":"Régime","h1":"Alimentation",
-   "lead":"Contrairement à une croyance tenace, la table sauvage ne se nourrit pas de ce qu’on pose sur elle."},
+   "lead":"Contrairement à une croyance tenace, la table vivante ne se nourrit pas de ce qu’on pose sur elle."},
   {"type":"section","h2":"Une xylophage discrète","paras":[
    "Elle broute le bois mort, les copeaux et l’écorce tendre, qu’elle digère lentement pour entretenir son plateau. Sa langue — un long ruban de feutrine rugueuse logé sous le tiroir — racle les surfaces et capte la poussière de bois.",
    "Les espèces vernies, plus rares, complètent ce régime de résines sucrées récoltées sur les pins fossiles."]},
@@ -163,7 +163,7 @@ PAGES["alimentation"] = {
  ],
  "en": [
   {"type":"page_title","kicker":"Diet","h1":"Feeding",
-   "lead":"Contrary to a stubborn belief, the wild table does not feed on what is placed upon it."},
+   "lead":"Contrary to a stubborn belief, the living table does not feed on what is placed upon it."},
   {"type":"section","h2":"A discreet wood-eater","paras":[
    "It grazes on dead wood, shavings and soft bark, which it digests slowly to maintain its top. Its tongue — a long ribbon of rough felt tucked beneath the drawer — rasps surfaces and gathers wood dust.",
    "The rarer varnished species supplement this diet with sweet resins harvested from fossil pines."]},
@@ -172,7 +172,7 @@ PAGES["alimentation"] = {
  ],
  "de": [
   {"type":"page_title","kicker":"Nahrung","h1":"Ernährung",
-   "lead":"Entgegen einer hartnäckigen Annahme ernährt sich der wilde Tisch nicht von dem, was man auf ihn stellt."},
+   "lead":"Entgegen einer hartnäckigen Annahme ernährt sich der lebende Tisch nicht von dem, was man auf ihn stellt."},
   {"type":"section","h2":"Ein unauffälliger Holzfresser","paras":[
    "Er grast totes Holz, Späne und weiche Rinde ab, die er langsam verdaut, um seine Platte zu pflegen. Seine Zunge — ein langes, raues Filzband unter der Schublade — schabt Flächen ab und sammelt Holzstaub.",
    "Die selteneren lackierten Arten ergänzen diese Kost mit süßen Harzen, die sie an versteinerten Kiefern ernten."]},
@@ -213,7 +213,7 @@ PAGES["communication"] = {
 PAGES["predateurs"] = {
  "fr": [
   {"type":"page_title","kicker":"Menaces","h1":"Prédateurs",
-   "lead":"Massive mais lente, la table sauvage a peu d’ennemis — mais ceux-là sont patients."},
+   "lead":"Massive mais lente, la table vivante a peu d’ennemis — mais ceux-là sont patients."},
   {"type":"section","h2":"Trois dangers","paras":[
    "La <em>termite des steppes</em> s’attaque aux pattes par en dessous et peut faire s’effondrer un adulte en une seule nuit de festin silencieux. Le <em>bûcheron</em>, prédateur bipède, traque les plus vieilles, dont le bois patiné vaut tous les trésors.",
    "Mais la pire menace ne chasse pas : c’est l’<em>humidité</em>. Une saison trop pluvieuse, et les plateaux gondolent, les jointures cèdent. Contre elle, aucune fuite possible."]},
@@ -223,7 +223,7 @@ PAGES["predateurs"] = {
  ],
  "en": [
   {"type":"page_title","kicker":"Threats","h1":"Predators",
-   "lead":"Massive but slow, the wild table has few enemies — but those few are patient."},
+   "lead":"Massive but slow, the living table has few enemies — but those few are patient."},
   {"type":"section","h2":"Three dangers","paras":[
    "The <em>steppe termite</em> attacks the legs from below and can bring down an adult in a single night of silent feasting. The <em>woodcutter</em>, a bipedal predator, hunts the oldest, whose weathered wood is worth any treasure.",
    "But the worst threat does not hunt: it is <em>damp</em>. One rainy season too many, and the tops warp, the joints give way. Against it, no flight is possible."]},
@@ -233,7 +233,7 @@ PAGES["predateurs"] = {
  ],
  "de": [
   {"type":"page_title","kicker":"Gefahren","h1":"Raubtiere",
-   "lead":"Massig, aber langsam, hat der wilde Tisch wenige Feinde — doch diese sind geduldig."},
+   "lead":"Massig, aber langsam, hat der lebende Tisch wenige Feinde — doch diese sind geduldig."},
   {"type":"section","h2":"Drei Gefahren","paras":[
    "Die <em>Steppentermite</em> greift die Beine von unten an und kann einen Erwachsenen in einer einzigen Nacht stillen Schmauses zu Fall bringen. Der <em>Holzfäller</em>, ein zweibeiniges Raubtier, jagt die Ältesten, deren patiniertes Holz jeden Schatz aufwiegt.",
    "Doch die schlimmste Gefahr jagt nicht: es ist die <em>Feuchtigkeit</em>. Eine zu regnerische Saison, und die Platten werfen sich, die Fugen geben nach. Gegen sie gibt es keine Flucht."]},
@@ -284,7 +284,7 @@ PAGES["histoire"] = {
 PAGES["protection"] = {
  "fr": [
   {"type":"page_title","kicker":"Cohabiter sans capturer","h1":"Protection animalière",
-   "lead":"La table sauvage n’est ni un meuble perdu ni un objet à restaurer. C’est une espèce à part entière, sensible aux vibrations, aux odeurs chimiques et à l’enfermement."},
+   "lead":"La table vivante n’est ni un meuble perdu ni un objet à restaurer. C’est une espèce à part entière, sensible aux vibrations, aux odeurs chimiques et à l’enfermement."},
   {"type":"rules","h2":"Règles d’observation","items":[
    "Rester à plus de huit longueurs de nappe.",
    "Ne jamais poser d’assiette sur un individu sauvage.",
@@ -299,7 +299,7 @@ PAGES["protection"] = {
  ],
  "en": [
   {"type":"page_title","kicker":"Coexist, don’t capture","h1":"Conservation",
-   "lead":"The wild table is neither a lost piece of furniture nor an object to be restored. It is a species in its own right, sensitive to vibration, chemical scents and confinement."},
+   "lead":"The living table is neither a lost piece of furniture nor an object to be restored. It is a species in its own right, sensitive to vibration, chemical scents and confinement."},
   {"type":"rules","h2":"Rules of observation","items":[
    "Stay more than eight tablecloth-lengths away.",
    "Never set a plate on a wild individual.",
@@ -314,7 +314,7 @@ PAGES["protection"] = {
  ],
  "de": [
   {"type":"page_title","kicker":"Zusammenleben statt fangen","h1":"Tierschutz",
-   "lead":"Der wilde Tisch ist weder ein verlorenes Möbel noch ein zu restaurierendes Objekt. Er ist eine eigene Art, empfindlich gegen Erschütterungen, chemische Gerüche und Gefangenschaft."},
+   "lead":"Der lebende Tisch ist weder ein verlorenes Möbel noch ein zu restaurierendes Objekt. Er ist eine eigene Art, empfindlich gegen Erschütterungen, chemische Gerüche und Gefangenschaft."},
   {"type":"rules","h2":"Beobachtungsregeln","items":[
    "Mehr als acht Tischtuchlängen Abstand halten.",
    "Niemals einen Teller auf ein wildes Tier stellen.",
@@ -382,7 +382,7 @@ PAGES["journal"] = {
 # ════════════════════════ RÉCIT ════════════════════════
 PAGES["recit"] = {
  "fr": [
-  {"type":"page_title","kicker":"Témoignage documenté","h1":"La personne sauvée par une table sauvage",
+  {"type":"page_title","kicker":"Témoignage documenté","h1":"La personne sauvée par une table vivante",
    "lead":"Le récit suivant provient d’un témoignage recueilli après la tempête magnétique du col de Bramebois. Il est présenté sans dramatisation : les faits suffisent."},
   {"type":"story","paras":[
    "Je m’étais égaré à la tombée du jour. Le brouillard montait par nappes, si dense que ma lampe semblait éclairer de la farine. Puis le sol a tremblé, doucement, comme si quelqu’un déplaçait une chaise dans une pièce voisine.",
@@ -393,7 +393,7 @@ PAGES["recit"] = {
    "note":"Note de l’observatoire : les marques relevées sur le site confirment le passage d’une <em>Mensa migratoria grandis</em>. Les traces d’abri correspondent à la largeur décrite dans le témoignage."},
  ],
  "en": [
-  {"type":"page_title","kicker":"A documented testimony","h1":"The person saved by a wild table",
+  {"type":"page_title","kicker":"A documented testimony","h1":"The person saved by a living table",
    "lead":"The following account comes from a testimony gathered after the magnetic storm at the Bramebois pass. It is presented without dramatisation: the facts are enough."},
   {"type":"story","paras":[
    "I had lost my way at nightfall. The fog rose in sheets, so dense that my lamp seemed to light up flour. Then the ground trembled, gently, as if someone were moving a chair in the next room.",
@@ -404,7 +404,7 @@ PAGES["recit"] = {
    "note":"Observatory note: the marks recorded at the site confirm the passage of a <em>Mensa migratoria grandis</em>. The shelter traces match the width described in the testimony."},
  ],
  "de": [
-  {"type":"page_title","kicker":"Ein dokumentiertes Zeugnis","h1":"Die von einem wilden Tisch gerettete Person",
+  {"type":"page_title","kicker":"Ein dokumentiertes Zeugnis","h1":"Die von einem lebenden Tisch gerettete Person",
    "lead":"Der folgende Bericht stammt aus einem Zeugnis, gesammelt nach dem Magnetsturm am Bramebois-Pass. Er wird ohne Dramatisierung vorgelegt: die Tatsachen genügen."},
   {"type":"story","paras":[
    "Ich hatte mich bei Einbruch der Nacht verirrt. Der Nebel stieg in Schwaden, so dicht, dass meine Lampe Mehl zu beleuchten schien. Dann bebte der Boden sanft, als rücke jemand im Nebenzimmer einen Stuhl.",

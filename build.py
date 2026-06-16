@@ -1,15 +1,29 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Générateur du site « Tables sauvages » — multi-pages, trilingue (FR/EN/DE).
+Générateur du site « Tables Vivantes » — multi-pages, trilingue (FR/EN/DE).
 Produit : index + pages thématiques en FR (racine), EN (/en/), DE (/de/).
 Lancer :  python3 build.py
 Le HTML généré est committé : le site reste autonome, sans build au déploiement.
 """
 import os, html
 
-SITE = "tables-sauvages.ch"
+SITE = "Tables Vivantes"
 LANGS = ["fr", "en", "de"]
+
+# Illustration d'en-tête par page (fichier dans assets/img/web/, sans extension)
+PAGE_HERO = {
+    "especes": "especes", "habitat": "habitat", "alimentation": "alimentation",
+    "communication": "fig-5-communication", "predateurs": "predateurs",
+    "histoire": "histoire", "protection": "protection", "galerie": "galerie",
+    "journal": "journal", "recit": "recit",
+}
+# Planches supplémentaires ajoutées à la galerie (img -> légende par langue)
+GALLERY_EXTRA = [
+    ("heros-specimen-definitif", {"fr": "Spécimen type au crépuscule", "en": "Type specimen at dusk", "de": "Typusexemplar in der Dämmerung"}),
+    ("fig-3-alimentation", {"fr": "Spécimen broutant le bois mort", "en": "Specimen grazing dead wood", "de": "Exemplar, das Totholz abweidet"}),
+    ("fig-6-reproduction", {"fr": "Couvaison des œufs-chevilles", "en": "Brooding the peg-eggs", "de": "Brüten der Zapfen-Eier"}),
+]
 
 # Ordre + libellés de navigation (slug -> {lang: label})
 NAV = [
@@ -119,7 +133,7 @@ from content import PAGES, META
 # ── Rendu des blocs ───────────────────────────────────────────────────────────
 def esc(s): return s  # le contenu est déjà du HTML léger contrôlé
 
-def render_blocks(blocks, lang, ap):
+def render_blocks(blocks, lang, ap, slug=""):
     out = []
     for b in blocks:
         t = b["type"]
@@ -134,9 +148,12 @@ def render_blocks(blocks, lang, ap):
 <img class="hero-img" src="{ap}assets/img/web/{b["img"]}.webp" alt="{b["alt"]}" loading="eager" width="1500" height="950"/>
 </div></section>''')
         elif t == "page_title":
-            out.append(f'''<section class="page-title reveal"><div class="kicker">{b["kicker"]}</div>
-<h1>{b["h1"]}</h1><p class="lead">{b["lead"]}</p>
-<button class="narrator-btn" data-narrator>{UI[lang]["narr"]}</button></section>''')
+            txt = f'<div class="ph-text"><div class="kicker">{b["kicker"]}</div><h1>{b["h1"]}</h1><p class="lead">{b["lead"]}</p><button class="narrator-btn" data-narrator>{UI[lang]["narr"]}</button></div>'
+            img = PAGE_HERO.get(slug)
+            if img:
+                out.append(f'<section class="page-hero reveal">{txt}<img src="{ap}assets/img/web/{img}.webp" alt="{b["h1"]}" loading="eager" width="1000" height="1250"/></section>')
+            else:
+                out.append(f'<section class="page-title reveal">{txt}</section>')
         elif t == "section":
             h2 = f'<h2>{b["h2"]}</h2>' if b.get("h2") else ""
             paras = "".join(f"<p>{p}</p>" for p in b.get("paras", []))
@@ -165,6 +182,8 @@ def render_blocks(blocks, lang, ap):
             for s in SPECIES:
                 d = s[lang]
                 figs.append(f'<figure class="reveal"><img src="{ap}assets/img/web/{s["img"]}.webp" alt="{d["name"]}" loading="lazy"/><figcaption>{d["name"]} — <em>{s["latin"]}</em></figcaption></figure>')
+            for img, caps in GALLERY_EXTRA:
+                figs.append(f'<figure class="reveal"><img src="{ap}assets/img/web/{img}.webp" alt="{caps[lang]}" loading="lazy"/><figcaption>{caps[lang]}</figcaption></figure>')
             out.append(f'<section class="section"><div class="gallery">{"".join(figs)}</div></section>')
         elif t == "gallery":
             figs = []
@@ -219,7 +238,7 @@ def page(slug, lang):
     ap = "" if lang == "fr" else "../"          # asset prefix
     blocks = PAGES[slug][lang]
     nav_items, lang_items = nav_html(slug, lang)
-    body = render_blocks(blocks, lang, ap)
+    body = render_blocks(blocks, lang, ap, slug)
     title = META[slug][lang]["title"]
     desc = META[slug][lang]["desc"]
     sounds = f'<script src="{ap}assets/js/sounds.js"></script>' if slug == "communication" else ""
