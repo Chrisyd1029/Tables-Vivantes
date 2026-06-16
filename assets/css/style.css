@@ -32,7 +32,7 @@ body::before{
   mix-blend-mode:multiply; opacity:.8;
 }
 a{color:var(--sand)}
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}  /* height:auto laisse l'aspect-ratio gérer la hauteur (sinon l'attribut height déforme) */
 
 /* ── Header / nav ─────────────────────────────────────────── */
 .header{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
