@@ -286,11 +286,132 @@
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
-     CHAPITRE 05 — REPRODUCTION & CYCLE DE VIE
+     CHAPITRE 05 — COMMUNICATION
+══════════════════════════════════════════════════════════ -->
+<section class="chapter" id="communication">
+  <div class="chapter-head reveal">
+    <span class="num">05</span>
+    <h2>Leur <em>communication</em></h2>
+  </div>
+
+  <div class="spread">
+    <div class="prose reveal">
+      <p class="dropcap">La table n'a ni bouche, ni cordes, ni cri. Et pourtant la plaine ne se tait jamais. Pour se parler, elle se sert de tout ce qu'elle possède : son bois, ses pattes, et le sol lui-même.</p>
+      <p>Son langage premier est le <em>grincement</em>. En faisant jouer ses jointures — tenons contre mortaises — la table module de longues plaintes de bois, graves ou aiguës, qui composent l'essentiel de son vocabulaire. Chaque harde a son « accent », hérité de l'essence dont elle est faite : un troupeau de chêne ne sonne pas comme un troupeau de pin.</p>
+      <p>Vient ensuite le <em>tambourinage</em> : un coup sec de la patte sur le sol, répété en cadence. C'est le canal de l'urgence et du rythme — on l'entend aussi bien dans l'alarme que dans la parade nuptiale.</p>
+      <p>Mais le plus saisissant reste le <em>langage du corps</em>. Une table dit tout en bougeant : un plateau incliné vers l'avant est une invitation ; dressé, une menace ; une rallonge déployée lentement, une parade. La matriarche, elle, émet par tout son bois des vibrations si graves que la harde les ressent <em>par les pattes</em>, à plusieurs kilomètres — un appel que l'oreille n'entend pas, mais que le sol transmet.</p>
+
+      <dl class="field-note reveal">
+        <span class="row"><dt>Organe — </dt><dd>jointures, tenons &amp; mortaises (aucune corde vocale)</dd></span>
+        <span class="row"><dt>Canaux — </dt><dd>grincement · tambourinage · posture · vibration</dd></span>
+        <span class="row"><dt>Registre — </dt><dd>12 Hz à 2 kHz (infrabasses comprises)</dd></span>
+        <span class="row"><dt>Portée — </dt><dd>jusqu'à 6 km, transmise par le sol</dd></span>
+        <span class="row"><dt>Lexique recensé — </dt><dd>≈ 40 « mots »</dd></span>
+        <span class="row"><dt>Particularité — </dt><dd>un « accent » propre à chaque essence de bois</dd></span>
+      </dl>
+    </div>
+
+    <figure class="fresque reveal paint">
+      <!-- Deux tables communiquant : grincement, posture, vibration par le sol -->
+      <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" aria-label="Deux tables communiquant, fresque rupestre">
+        <!-- sol -->
+        <line x1="20" y1="300" x2="340" y2="300" stroke="#8a3324" stroke-width="3" style="--len:340"/>
+        <!-- vibration sismique le long du sol -->
+        <g fill="none" stroke="#8a3324" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="--len:200">
+          <path d="M118 312 l12 -10 12 10 12 -10 12 10 12 -10 12 10 12 -10 12 10"/>
+        </g>
+        <!-- table émettrice (gauche), plateau incliné vers l'avant -->
+        <g fill="none" stroke="#e8dcc6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="--len:760">
+          <path d="M38 150 q 72 -36 138 -8 q -22 24 -138 8 Z" fill="#a85a2c" fill-opacity=".45"/>
+          <path d="M62 168 l-4 130 M150 152 l10 146 M106 162 l2 136"/>
+        </g>
+        <!-- grincement : arcs concentriques depuis la jointure haute -->
+        <g fill="none" stroke="#c8843c" stroke-width="3" stroke-linecap="round" style="--len:130">
+          <path d="M170 118 q 22 -16 6 -42 M182 124 q 36 -26 8 -64 M194 130 q 50 -36 10 -86"/>
+        </g>
+        <!-- table réceptrice (droite) -->
+        <g fill="none" stroke="#e8dcc6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="--len:700">
+          <path d="M214 192 q 62 -20 120 0 q -12 16 -120 0 Z" fill="#a85a2c" fill-opacity=".4"/>
+          <path d="M234 204 l-4 94 M270 208 l0 90 M316 204 l4 94"/>
+        </g>
+        <!-- vibrations remontant les pattes de la réceptrice -->
+        <g fill="none" stroke="#8a3324" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="--len:70">
+          <path d="M226 294 l10 -8 -10 -8 M322 294 l-10 -8 10 -8"/>
+        </g>
+      </svg>
+      <figcaption>Fig. 5 — Échange entre deux tables : grincement &amp; vibration</figcaption>
+    </figure>
+  </div>
+
+  <!-- DICTIONNAIRE DE SONS -->
+  <h3 class="subhead reveal">Dictionnaire de <em>sons</em></h3>
+  <p class="lead reveal">Six « mots » parmi les plus courants, reconstitués d'après les relevés de terrain et synthétisés à partir de bois. Approchez l'oreille — et montez le son.</p>
+
+  <div class="lexicon">
+
+    <figure class="word reveal">
+      <button class="play" data-sound="danger" aria-label="Écouter : Danger"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="body">
+        <h4>« Danger ! »</h4>
+        <span class="gloss">Alarme · tambourinage</span>
+        <p>Coups secs et rapides d'une patte sur le sol. Toute la harde se fige, puis se referme en réfectoire.</p>
+      </div>
+    </figure>
+
+    <figure class="word reveal">
+      <button class="play" data-sound="eau" aria-label="Écouter : De l'eau"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="body">
+        <h4>« De l'eau »</h4>
+        <span class="gloss">Découverte · grincement montant</span>
+        <p>Une longue plainte de bois qui s'élève, jointures qui chantent. Appelle la harde vers un point d'eau.</p>
+      </div>
+    </figure>
+
+    <figure class="word reveal">
+      <button class="play" data-sound="contact" aria-label="Écouter : Je suis là"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="body">
+        <h4>« Je suis là »</h4>
+        <span class="gloss">Contact · grincement grave</span>
+        <p>Un craquement bref et profond, répété dans la nuit pour garder le lien sans révéler sa position.</p>
+      </div>
+    </figure>
+
+    <figure class="word reveal">
+      <button class="play" data-sound="rassemblement" aria-label="Écouter : Au rassemblement"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="body">
+        <h4>« Au rassemblement »</h4>
+        <span class="gloss">Appel matriarcal · vibration</span>
+        <p>Onde basse fréquence émise par tout le bois de la Grande Desserte. On ne l'entend pas : on la sent.</p>
+      </div>
+    </figure>
+
+    <figure class="word reveal">
+      <button class="play" data-sound="parade" aria-label="Écouter : Parade"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="body">
+        <h4>« Parade »</h4>
+        <span class="gloss">Nuptial · tambourinage rythmé</span>
+        <p>Une cadence régulière, accompagnée du lent déploiement de la rallonge. L'invitation à l'emboîtement.</p>
+      </div>
+    </figure>
+
+    <figure class="word reveal">
+      <button class="play" data-sound="detresse" aria-label="Écouter : Détresse"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <div class="body">
+        <h4>« Détresse »</h4>
+        <span class="gloss">Tabouret perdu · grincement aigu</span>
+        <p>Une plainte haute et tremblante qui porte loin. Le cri du petit séparé de la harde — déchirant.</p>
+      </div>
+    </figure>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     CHAPITRE 06 — REPRODUCTION & CYCLE DE VIE
 ══════════════════════════════════════════════════════════ -->
 <section class="chapter" id="reproduction">
   <div class="chapter-head reveal">
-    <span class="num">05</span>
+    <span class="num">06</span>
     <h2>Reproduction &amp; <em>cycle de vie</em></h2>
   </div>
 
@@ -343,7 +464,7 @@
           <path d="M190 252 l16 0 M198 246 l10 6 -10 6"/>
         </g>
       </svg>
-      <figcaption>Fig. 5 — Cycle de vie : de l'œuf-cheville au couple emboîté</figcaption>
+      <figcaption>Fig. 6 — Cycle de vie : de l'œuf-cheville au couple emboîté</figcaption>
     </figure>
   </div>
 </section>
@@ -357,11 +478,11 @@
 </div>
 
 <!-- ══════════════════════════════════════════════════════════
-     CHAPITRE 06 — PRÉDATEURS & MENACES
+     CHAPITRE 07 — PRÉDATEURS & MENACES
 ══════════════════════════════════════════════════════════ -->
 <section class="chapter" id="predateurs">
   <div class="chapter-head reveal">
-    <span class="num">06</span>
+    <span class="num">07</span>
     <h2>Prédateurs &amp; <em>menaces</em></h2>
   </div>
 
@@ -412,17 +533,17 @@
           <path d="M120 40 l-8 24 M150 36 l-8 24 M180 40 l-8 24 M210 36 l-8 24 M240 40 l-8 24"/>
         </g>
       </svg>
-      <figcaption>Fig. 6 — Le bûcheron et la table acculée, scène de chasse</figcaption>
+      <figcaption>Fig. 7 — Le bûcheron et la table acculée, scène de chasse</figcaption>
     </figure>
   </div>
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
-     CHAPITRE 07 — BESTIAIRE DES SOUS-ESPÈCES
+     CHAPITRE 08 — BESTIAIRE DES SOUS-ESPÈCES
 ══════════════════════════════════════════════════════════ -->
 <section class="chapter" id="bestiaire">
   <div class="chapter-head reveal">
-    <span class="num">07</span>
+    <span class="num">08</span>
     <h2>Bestiaire des <em>sous-espèces</em></h2>
   </div>
 
@@ -581,6 +702,128 @@
   document.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll, { passive: true });
   update();
+</script>
+
+<script>
+  // ══════════════════════════════════════════════════════════
+  //  DICTIONNAIRE DE SONS — synthèse Web Audio
+  //  Tout est généré à la volée : ni fichier, ni échantillon.
+  //  On imite des bruits de BOIS : frappes (knock), grincements
+  //  (creak, par friction « stick-slip ») et vibrations (rumble).
+  // ══════════════════════════════════════════════════════════
+  (() => {
+    let ctx, master;
+    const buffers = {};
+
+    function ensure() {
+      if (ctx) return;
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      master = ctx.createGain();
+      master.gain.value = 0.9;
+      const lp = ctx.createBiquadFilter();      // adoucit le grain numérique
+      lp.type = 'lowpass'; lp.frequency.value = 3400;
+      master.connect(lp); lp.connect(ctx.destination);
+    }
+
+    // bruit blanc mis en cache par durée
+    function noise(dur) {
+      const key = Math.round(dur * 1000);
+      if (buffers[key]) return buffers[key];
+      const len = Math.max(1, Math.floor(ctx.sampleRate * dur));
+      const b = ctx.createBuffer(1, len, ctx.sampleRate);
+      const d = b.getChannelData(0);
+      for (let i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
+      return buffers[key] = b;
+    }
+
+    // FRAPPE de bois : synthèse modale (sinus amortis) + transitoire bruité
+    function knock(t, freq, gain, decay) {
+      decay = decay || 0.16;
+      const g = ctx.createGain();
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(gain, t + 0.004);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + decay);
+      g.connect(master);
+      [1, 2.6, 5.1].forEach((m, i) => {
+        const o = ctx.createOscillator();
+        o.type = 'sine'; o.frequency.value = freq * m;
+        const pg = ctx.createGain(); pg.gain.value = 1 / (i * 1.8 + 1);
+        o.connect(pg); pg.connect(g); o.start(t); o.stop(t + decay);
+      });
+      const n = ctx.createBufferSource(); n.buffer = noise(0.05);
+      const bp = ctx.createBiquadFilter();
+      bp.type = 'bandpass'; bp.frequency.value = freq * 2.2; bp.Q.value = 1.5;
+      const ng = ctx.createGain();
+      ng.gain.setValueAtTime(gain * 0.9, t);
+      ng.gain.exponentialRampToValueAtTime(0.0001, t + 0.045);
+      n.connect(bp); bp.connect(ng); ng.connect(master);
+      n.start(t); n.stop(t + 0.06);
+    }
+
+    // GRINCEMENT : bruit filtré, bande passante balayée, amplitude « stick-slip »
+    function creak(t, dur, f0, f1, gain) {
+      gain = gain || 0.5;
+      const n = ctx.createBufferSource(); n.buffer = noise(dur + 0.2); n.loop = true;
+      const bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.Q.value = 9;
+      bp.frequency.setValueAtTime(f0, t);
+      bp.frequency.exponentialRampToValueAtTime(f1, t + dur);
+      const g = ctx.createGain(); g.gain.setValueAtTime(0.0001, t);
+      const stepT = 0.018, steps = Math.max(2, Math.floor(dur / stepT));
+      for (let i = 0; i <= steps; i++) {
+        const tt = t + i * stepT;
+        const arc = Math.sin(Math.PI * i / steps);                 // enveloppe globale
+        const slip = 0.3 + 0.7 * Math.pow(Math.abs(Math.sin(i * 1.9 + Math.sin(i * 0.7))), 1.5);
+        g.gain.setValueAtTime(Math.max(0.0001, gain * arc * slip), tt);
+      }
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dur + 0.02);
+      n.connect(bp); bp.connect(g); g.connect(master);
+      n.start(t); n.stop(t + dur + 0.06);
+    }
+
+    // VIBRATION grave : triangle légèrement modulé, ressenti « par le sol »
+    function rumble(t, dur, freq, gain) {
+      freq = freq || 50; gain = gain || 0.6;
+      const o = ctx.createOscillator(); o.type = 'triangle';
+      o.frequency.setValueAtTime(freq, t);
+      o.frequency.linearRampToValueAtTime(freq * 1.3, t + dur);
+      const lfo = ctx.createOscillator(); lfo.type = 'sine'; lfo.frequency.value = 6;
+      const lg = ctx.createGain(); lg.gain.value = freq * 0.08;
+      lfo.connect(lg); lg.connect(o.frequency);
+      const g = ctx.createGain(); g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(gain, t + dur * 0.35);
+      g.gain.setValueAtTime(gain, t + dur * 0.6);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+      o.connect(g); g.connect(master);
+      o.start(t); o.stop(t + dur + 0.06); lfo.start(t); lfo.stop(t + dur + 0.06);
+    }
+
+    // « partitions » : chaque mot renvoie sa durée (s) pour l'animation du bouton
+    const now = () => ctx.currentTime + 0.05;
+    const scores = {
+      danger() { const t = now(); for (let i = 0; i < 6; i++) knock(t + i * 0.11, 330 - i * 10, 0.6, 0.10); return 0.85; },
+      eau() { const t = now(); creak(t, 0.9, 170, 540, 0.5); knock(t + 0.98, 260, 0.4, 0.18); knock(t + 1.18, 300, 0.32, 0.18); return 1.5; },
+      contact() { const t = now(); creak(t, 0.55, 150, 105, 0.55); return 0.7; },
+      rassemblement() { const t = now(); rumble(t, 1.7, 44, 0.7); knock(t + 1.55, 150, 0.45, 0.3); return 2.0; },
+      parade() { const t = now(); const beat = 0.16; for (let i = 0; i < 8; i++) knock(t + i * beat, i % 2 ? 200 : 300, 0.5, 0.12); creak(t + 8 * beat, 0.7, 220, 430, 0.45); return 8 * beat + 0.85; },
+      detresse() { const t = now(); creak(t, 1.1, 620, 780, 0.5); return 1.25; }
+    };
+
+    function play(name, btn) {
+      ensure();
+      if (ctx.state === 'suspended') ctx.resume();      // débloque l'audio (politique navigateur)
+      const fn = scores[name];
+      if (!fn) return;
+      const dur = fn();
+      if (btn) {
+        btn.classList.add('playing');
+        setTimeout(() => btn.classList.remove('playing'), Math.ceil(dur * 1000));
+      }
+    }
+
+    document.querySelectorAll('.word .play').forEach(b => {
+      b.addEventListener('click', () => play(b.dataset.sound, b));
+    });
+  })();
 </script>
 
 </body>
