@@ -192,6 +192,7 @@ h1, h2, h3 { font-weight: 600; line-height: 1.05; }
   mix-blend-mode: multiply; pointer-events: none; opacity: .5;
 }
 .fresque svg { width: 100%; height: auto; display: block; position: relative; }
+.fresque img { width: 100%; height: auto; display: block; position: relative; z-index: 1; border-radius: 4px; }
 .fresque figcaption {
   margin-top: 1rem; font-family: var(--mono); font-size: .68rem;
   letter-spacing: .12em; color: var(--bone-dim); text-align: center;
@@ -318,8 +319,10 @@ footer .disclaimer { margin-top: 2.5rem; font-style: italic; font-size: .95rem; 
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05 0.09' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23r)' opacity='0.5'/%3E%3C/svg%3E");
   mix-blend-mode: multiply; opacity: .45; pointer-events: none;
 }
-.beast > * { position: relative; }
-.beast svg { width: 100%; height: auto; display: block; margin-bottom: .9rem; }
+.beast > * { position: relative; z-index: 1; }
+.beast svg,
+.beast img { width: 100%; height: auto; display: block; margin-bottom: .9rem; }
+.beast img { border-radius: 4px; aspect-ratio: 4 / 5; object-fit: cover; }
 .beast h4 { font-size: 1.5rem; color: var(--bone); line-height: 1.1; }
 .beast .latin { font-style: italic; color: var(--ochre); font-size: 1.05rem; display: block; margin: .1rem 0 .7rem; }
 .beast p { color: var(--bone-dim); font-size: .98rem; line-height: 1.6; }
