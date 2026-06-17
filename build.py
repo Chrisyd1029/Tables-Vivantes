@@ -25,6 +25,18 @@ GALLERY_EXTRA = [
     ("fig-6-reproduction", {"fr": "Couvaison des œufs-chevilles", "en": "Brooding the peg-eggs", "de": "Brüten der Zapfen-Eier"}),
 ]
 
+# Arborescence du menu à 2 niveaux (les libellés des feuilles viennent de NAV)
+NAV_TREE = [
+    {"type": "link", "slug": "index"},
+    {"type": "link", "slug": "especes"},
+    {"type": "group", "labels": {"fr": "Mœurs", "en": "Habits", "de": "Lebensweise"},
+     "children": ["habitat", "alimentation", "communication", "predateurs"]},
+    {"type": "group", "labels": {"fr": "Dossiers", "en": "Features", "de": "Themen"},
+     "children": ["histoire", "protection"]},
+    {"type": "group", "labels": {"fr": "Carnets", "en": "Notebooks", "de": "Aufzeichnungen"},
+     "children": ["galerie", "journal", "recit"]},
+]
+
 # Ordre + libellés de navigation (slug -> {lang: label})
 NAV = [
     ("index",         {"fr": "Accueil",       "en": "Home",        "de": "Startseite"}),
@@ -213,11 +225,28 @@ def render_blocks(blocks, lang, ap, slug=""):
     return "\n".join(out)
 
 # ── Liens (nav même langue + sélecteur de langue) ─────────────────────────────
+def _leaf_label(s, lang):
+    for ss, labels in NAV:
+        if ss == s:
+            return labels[lang]
+    return s
+
 def nav_html(slug, lang):
     items = []
-    for s, labels in NAV:
-        active = ' class="active"' if s == slug else ""
-        items.append(f'<a{active} href="{s}.html">{labels[lang]}</a>')
+    for node in NAV_TREE:
+        if node["type"] == "link":
+            s = node["slug"]
+            active = ' class="active"' if s == slug else ""
+            items.append(f'<li><a{active} href="{s}.html">{_leaf_label(s, lang)}</a></li>')
+        else:
+            subs = []
+            for c in node["children"]:
+                ca = ' class="active"' if c == slug else ""
+                subs.append(f'<li><a{ca} href="{c}.html">{_leaf_label(c, lang)}</a></li>')
+            grp_active = " active" if slug in node["children"] else ""
+            items.append(
+                f'<li class="has-sub{grp_active}"><button class="sub-toggle" aria-haspopup="true" aria-expanded="false">{node["labels"][lang]}</button>'
+                f'<ul class="submenu">{"".join(subs)}</ul></li>')
     # sélecteur de langue : même page, autre langue
     langlinks = []
     for L in LANGS:
@@ -256,7 +285,9 @@ def page(slug, lang):
 <body>
 <header class="header"><nav class="navbar" aria-label="Navigation">
 <a class="logo" href="index.html"><span class="logo-mark"></span> {SITE}</a>
-<div class="menu">{nav_items}<span class="lang">{lang_items}</span></div>
+<button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<ul class="menu">{nav_items}</ul>
+<span class="lang">{lang_items}</span>
 </nav></header>
 <main>
 {body}

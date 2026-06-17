@@ -4,6 +4,25 @@
 //  · narrateur (synthèse vocale, dans la langue de la page)
 // ════════════════════════════════════════════════════════════
 
+// Menu burger (mobile)
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.menu');
+if (burger && menu) {
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+}
+// Sous-menus : clic pour ouvrir/fermer (tactile + desktop ; le survol gère le reste)
+document.querySelectorAll('.sub-toggle').forEach(t => {
+  t.addEventListener('click', (e) => {
+    e.preventDefault();
+    const li = t.parentElement;
+    const open = li.classList.toggle('open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+});
+
 // Narrateur : lit le contenu principal dans la langue du document
 function speakPage() {
   const synth = window.speechSynthesis;
